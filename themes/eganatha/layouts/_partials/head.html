@@ -1,4 +1,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width">
+
+{{ $desc := .Description | default (i18n "defaultDescription") }}
+
+<meta name="description" content="{{ $desc }}">
+
+<meta property="og:title" content="{{ .Title }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:description" content="{{ $desc }}">
+
 <title>{{ if .IsHome }}{{ site.Title }}{{ else }}{{ printf "%s | %s" .Title site.Title }}{{ end }}</title>
 {{ partialCached "head/css.html" . }}
