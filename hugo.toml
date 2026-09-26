@@ -1,0 +1,48 @@
+baseURL = 'https://eganatha.dev/'
+locale = 'en-us'
+title = 'eganatha.dev'
+theme = 'eganatha'
+
+[markup]
+  [markup.highlight]
+    codeFences = true
+    guessSyntax = false
+    lineNos = "inline"
+    style = "vim"
+    noClasses = true
+
+[languages]
+  [languages.en]
+    contentDir = 'content/en'
+    label = 'English'
+    weight = 10
+    [languages.en.menus]
+      [[languages.en.menus.main]]
+        name = 'Home'
+        pageRef = '/'
+        weight = 10
+      [[languages.en.menus.main]]
+        name = 'Blogs'
+        pageRef = '/blogs'
+        weight = 20
+      [[languages.en.menus.main]]
+        name = 'Tags'
+        pageRef = '/tags'
+        weight = 30
+  [languages.id]
+    contentDir = 'content/id'
+    label = 'Indonesia'
+    weight = 20
+    [languages.id.menus]
+      [[languages.id.menus.main]]
+        name = 'Beranda'
+        pageRef = '/'
+        weight = 10
+      [[languages.id.menus.main]]
+        name = 'Blog'
+        pageRef = '/blogs'
+        weight = 20
+      [[languages.id.menus.main]]
+        name = 'Tag'
+        pageRef = '/tags'
+        weight = 30

@@ -1,0 +1,21 @@
+header {
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 14pt;
+  border-bottom: none;
+}
+
+nav > ul {
+  background-color: blue;
+  list-style-type: none;
+  display: flex;
+  padding: 4px 6px;
+  margin: 0;
+  gap: 1em;
+}
+
+nav > ul > li > a {
+  color: white !important;
+}

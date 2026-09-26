@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <h1>{{ .Title }}</h1>
+  {{ .Content }}
+  {{ range .Pages }}
+    <section>
+      <h2><a href="{{ .RelPermalink }}">{{ .LinkTitle }}</a></h2>
+      {{ .Summary }}
+    </section>
+  {{ else }}
+    <p>{{ i18n "collection_empty" }}</p>
+  {{ end }}
+{{ end }}

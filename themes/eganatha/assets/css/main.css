@@ -1,0 +1,82 @@
+@import "components/header.css";
+@import "components/footer.css";
+
+:root {
+  --text-color: #ffffff;
+  --bg-color: #1a1a1a;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('../fonts/JetBrainsMono.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'JetBrainsMono';
+  src: url('../fonts/JetBrainsMono-italic.woff2') format('woff2');
+  font-weight: 100 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg-color);
+  font-family: 'JetBrainsMono', monospace;
+  line-height: 1.5;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 1em;
+  font-size: 12pt;
+}
+
+h1, h2 {
+  border-bottom: 1px solid #444;
+}
+
+.terms {
+  display: flex;
+}
+
+.terms ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+a {
+  color: #40ecff;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #c999ff;
+  text-decoration: none;
+}
+
+code {
+  background-color: black;
+  font-family: 'JetBrainsMono';
+  padding: 0 4px;
+  border: 1px solid #666;
+  color: #fc9992;
+}
+
+pre code {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+pre {
+  border: 1px solid #666;
+  padding: 2px;
+}
+
+.footnotes hr {
+  display: none;
+}
