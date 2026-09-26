@@ -46,3 +46,7 @@ theme = 'eganatha'
         name = 'Tag'
         pageRef = '/tags'
         weight = 30
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
